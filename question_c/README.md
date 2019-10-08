@@ -16,7 +16,7 @@ When a request is received the following steps are followed:
 	1. Request is parsed into a format that can be inserted in the cache.
 	2. The server closest to the location of the request is found (we want to reduce latency).
 	3. We handle the request using the cache of the closest server.
-	4. Once the request has been handled: we update the individual cache of all the servers in order to ensure data consistency across regions
+	4. Once the request has been handled: we update the individual cache of all the servers in order to ensure data consistency across 		regions
 	5. We then save the data in all servers to protect against network failures or crashes. 
 	6. We check the condition for cache expiration and if it is met, the contents of the Geocache are erased.
 
