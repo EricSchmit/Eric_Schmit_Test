@@ -13,6 +13,7 @@ A while loop (in run.py) handles requests to the Geocache.
 Ex: A request could ask the Geocache to retrieve a certain (key, value) from the Geocache.
 
 When a request is received the following steps are followed:
+
 	- Request is parsed into a format that can be inserted in the cache.
 	- The server closest to the location of the request is found (we want to reduce latency).
 	- We handle the request using the cache of the closest server.
