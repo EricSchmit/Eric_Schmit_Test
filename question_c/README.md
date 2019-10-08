@@ -1,6 +1,6 @@
-Implementation of a Geo Distributed LRU (least recently used) cache with time expiration 
+**Implementation of a Geo Distributed LRU (least recently used) cache with time expiration**
 
-Overall Design
+**Overall Design**
 
 The Geo Distributed cache (Geocache) is composed of a list of servers and has a pre-defined maximum capacity (max number of items that can be inserted in the cache).
 
@@ -22,7 +22,7 @@ When a request is received the following steps are followed:
 	6. We check the condition for cache expiration and if it is met, the contents of the Geocache are erased.
 
 
-Missing functionalities
+**Missing functionalities**
 
  Cache expiry: if no requests are made we cannot reach the code where the condition for cache expiry is tested.
 	—> Must implemented something to check the cache expiry while waiting for requests.	
