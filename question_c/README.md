@@ -25,10 +25,11 @@ When a request is received the following steps are followed:
 **Missing functionalities**
 
  Cache expiry: if no requests are made we cannot reach the code where the condition for cache expiry is tested.
-	—> Must implemented something to check the cache expiry while waiting for requests.	
+	—> Must implement something to check the cache expiry while waiting for requests.	
 	
  Error Handling for different cases
 	- Dealing with requests asking to retrieve keys that are not in the cache is not handled efficiently.
 	- Need to write more tests.
 
-Saving data to protect against network crashes is done with a python pickle (there should be better ways). 
+Saving data to protect against network crashes is done with a python pickle 
+	--> Need to implement a better way
